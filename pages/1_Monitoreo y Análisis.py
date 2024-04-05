@@ -9,10 +9,8 @@ st.title('Monitoreo y Análisis de datos.')
 st.subheader("Monitoreo y análisis Remoto.")
 image = Image.open("IoT.jpg")
 st.write('Monitorea en tiempo real las variables de temperatura y Humedad Relativa de tu sistema remoto, usa el enlace.')
-new_image = image.resize((600, 400))
-
-
 link_text = "[Monitoreo y Analisis de datos ](http://157.230.214.127:8501/Monitoreo)"
+new_image = image.resize((600, 400))
 st.image(new_image)
 # Mostrar el hipervínculo utilizando st.markdown
 st.markdown(link_text, unsafe_allow_html=True)

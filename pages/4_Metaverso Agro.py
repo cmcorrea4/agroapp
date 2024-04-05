@@ -1,9 +1,9 @@
 import streamlit as st
 from PIL import Image
 
-st.title("Realidades extendidas")
+st.title("Metaverso Agro.")
 
-st.write("Añadir a la realidad objetos digitales con Realidad Aumentada(AR), Construir Digitalmente cualquier espacio o elemento imaginado con realidad Virtual (VR).")
+st.write("Experimenta nuevas dimensiones para conocer espacios y proyectos Agro tecnológicos")
 
 image = Image.open("Metaverso2.png")
 new_image = image.resize((600, 400))

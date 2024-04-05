@@ -29,7 +29,7 @@ image = Image.open('Wisdom_Farmer.jpg')
 new_image = image.resize((600, 500))
 st.image(new_image)
 
-st.write('Este sistema ayuda a resolver algunas cuestiones sobre este tema, pregunta ')
+st.subheader('Bienvenido, puedes realizar conmigo cualquier consulta sobre el cultivo ')
 
 ke = st.text_input('Escribe la clave.')
 try:

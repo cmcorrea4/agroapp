@@ -8,7 +8,7 @@ from keras.models import load_model
 model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
-st.title("Clasificación de Imágenes")
+st.title("Detección de enfermedades")
 st.write('Toma una fotografía de la hoja para detectar enfermedades.')
 
 img_file_buffer = st.camera_input("Toma una Foto")

@@ -9,7 +9,7 @@ model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 st.title("Clasificación de Imágenes")
-st.write('Las máquinas comprenden ahora patrones y pueden ser entrenadas para tareas específicas de reconocimiento de imágenes.')
+st.write('Toma una fotografía de la hoja para detectar enfermedades.')
 
 img_file_buffer = st.camera_input("Toma una Foto")
 

@@ -29,7 +29,7 @@ image = Image.open('assitant_farm.jpg')
 new_image = image.resize((600, 500))
 st.image(new_image)
 
-st.subheader('Bienvenido!!!...Puedes conmigo resolver dudas sobre el cultivo ')
+st.subheader('Bienvenido!!!...Puedes conmigo resolver dudas sobre el cultivo.')
 
 ke = st.text_input('Escribe la clave.')
 try:

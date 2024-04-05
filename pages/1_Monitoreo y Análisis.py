@@ -8,7 +8,7 @@ st.title('Internet de las Cosas.')
 
 #st.subheader("Internet de las Cosas")
 image = Image.open("IoT.jpg")
-st.write('Es posible ahora conectar cualquier "cosa" a Internet.  Un escenario donde el intercambio de Información entre cosas permite la generación del valor agregado.')
+st.write('Monitorea en tiempo real las variables de temperatura y Humedad Relativa.')
 new_image = image.resize((600, 400))
 st.image(new_image)
 
@@ -17,7 +17,7 @@ link_text = "[Monitoreo y Analisis de datos ](http://157.230.214.127:8501/Monito
 # Mostrar el hipervínculo utilizando st.markdown
 st.markdown(link_text, unsafe_allow_html=True)
 st.subheader('Recolección y análisis de datos.')
-st.write('Las Condiciones de infraestructura Eléctrica y de redes no son favorables para muchas aplicaciones en el campo.')
+st.write('Carga aquí los datos obtenidos del sistema datalogger')
 uploaded_file = st.file_uploader("Cargue el archivo con los datos.")
 column_names=["Humedad","Temperatura"]
 if uploaded_file is not None:

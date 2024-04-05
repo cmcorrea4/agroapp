@@ -4,11 +4,11 @@ import pandas as pd
 from datetime import datetime, timedelta
 from PIL import Image
 
-st.title('Internet de las Cosas.')
+st.title('Monitoreo y Análisis de datos.')
 
-#st.subheader("Internet de las Cosas")
+st.subheader("Monitoreo y análisis Remoto.")
 image = Image.open("IoT.jpg")
-st.write('Monitorea en tiempo real las variables de temperatura y Humedad Relativa.')
+st.write('Monitorea en tiempo real las variables de temperatura y Humedad Relativa de tu sistema remoto.')
 new_image = image.resize((600, 400))
 st.image(new_image)
 
@@ -16,7 +16,7 @@ link_text = "[Monitoreo y Analisis de datos ](http://157.230.214.127:8501/Monito
 
 # Mostrar el hipervínculo utilizando st.markdown
 st.markdown(link_text, unsafe_allow_html=True)
-st.subheader('Recolección y análisis de datos.')
+st.subheader('Monitoreo y Análisis Local.')
 st.write('Carga aquí los datos obtenidos del sistema de toma de datos local.')
 uploaded_file = st.file_uploader("Cargue el archivo con los datos.")
 column_names=["Humedad","Temperatura"]

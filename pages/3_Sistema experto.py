@@ -24,12 +24,12 @@ except:
 
 st.title('Sistema Experto. 💬')
 
-image = Image.open('Wisdom_Farmer.jpg')
+image = Image.open('assistant_farm.jpg')
 
 new_image = image.resize((600, 500))
 st.image(new_image)
 
-st.subheader('Bienvenido, puedes realizar conmigo cualquier consulta sobre el cultivo ')
+st.subheader('Bienvenido!!!...Puedes conmigo resolver dudas sobre el cultivo ')
 
 ke = st.text_input('Escribe la clave.')
 try:

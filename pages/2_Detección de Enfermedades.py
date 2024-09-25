@@ -41,5 +41,5 @@ try:
           st.header('Saludable, con Probabilidad: '+str( prediction[0][0]) )
         if prediction[0][1]>0.5:
           st.header('Con Semptoria, con Probabilidad: '+str( prediction[0][1]))
-  except:
+except:
     pass

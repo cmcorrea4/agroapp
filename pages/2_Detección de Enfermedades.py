@@ -9,9 +9,17 @@ model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 st.title("Detección de enfermedades")
-st.write('Toma una fotografía de la hoja para detectar enfermedades.')
+#st.write('Toma una fotografía de la hoja para detectar enfermedades.')
 
-img_file_buffer = st.camera_input("Toma una Foto")
+cam_ = st.checkbox("Usar Cámara")
+
+if cam_ :
+   img_file_buffer = st.camera_input("Toma una Foto")
+else :
+   img_file_buffer = None
+
+
+#img_file_buffer = st.camera_input("Toma una Foto")
 bg_image = st.file_uploader("Cargar Imagen:", type=["png", "jpg"])
 if bg_image is not None:
     uploaded_file=bg_image

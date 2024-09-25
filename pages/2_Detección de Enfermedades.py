@@ -18,7 +18,7 @@ if bg_image is not None:
     st.image(uploaded_file, caption='Imagen cargada.', use_column_width=True)
 
 
-if img_file_buffer is not None || uploaded_file is not None:
+if img_file_buffer is not None  or uploaded_file is not None:
     # To read image file buffer with OpenCV:
     data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
    #To read image file buffer as a PIL Image:

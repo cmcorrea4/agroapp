@@ -12,6 +12,11 @@ st.title("Detección de enfermedades")
 st.write('Toma una fotografía de la hoja para detectar enfermedades.')
 
 img_file_buffer = st.camera_input("Toma una Foto")
+bg_image = st.file_uploader("Cargar Imagen:", type=["png", "jpg"])
+if bg_image is not None:
+    uploaded_file=bg_image
+    st.image(uploaded_file, caption='Imagen cargada.', use_column_width=True)
+
 
 if img_file_buffer is not None:
     # To read image file buffer with OpenCV:

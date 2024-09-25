@@ -22,7 +22,7 @@ if img_file_buffer is not None:
     # To read image file buffer with OpenCV:
     data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
    #To read image file buffer as a PIL Image:
-    img = Image.open(img_file_buffer)
+    img = Image.open(bg_image)   #img_file_buffer
 
     newsize = (224, 224)
     img = img.resize(newsize)

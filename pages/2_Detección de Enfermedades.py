@@ -9,7 +9,7 @@ model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 st.title("Detección de enfermedades")
-#st.write('Toma una fotografía de la hoja para detectar enfermedades.')
+st.write('Selecciona el metodo de captura de imagen, Foto o carga para evaluar.')
 
 cam_ = st.checkbox("Usar Cámara")
 

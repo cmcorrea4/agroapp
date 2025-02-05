@@ -59,6 +59,22 @@ st.markdown("""
         border-radius: 0.7rem;
         margin: 1rem 0;
     }
+    .benefits-list {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+    }
+    .benefits-list p {
+        margin: 0.5rem 0;
+        padding-left: 1.5rem;
+        position: relative;
+    }
+    .benefits-list p:before {
+        content: "•";
+        position: absolute;
+        left: 0.5rem;
+    }
     </style>
     """, unsafe_allow_html=True)
 
@@ -148,7 +164,7 @@ def main():
             </div>
         """, unsafe_allow_html=True)
 
-    # Sección de tecnologías
+    # Sección de tecnologías y beneficios
     st.markdown("""
         <div class="tech-details">
             <h3>💡 Tecnologías Implementadas</h3>
@@ -156,19 +172,23 @@ def main():
             <ul>
                 <li><strong>Internet de las Cosas (IoT):</strong> Sensores y dispositivos conectados para monitoreo en tiempo real</li>
                 <li><strong>Inteligencia Artificial:</strong> Algoritmos avanzados para detección de enfermedades y análisis predictivo</li>
+                <li><strong>Sistemas Expertos:</strong> Motores de inferencia para recomendaciones precisas basadas en conocimiento agrícola especializado</li>
                 <li><strong>Big Data:</strong> Análisis de grandes volúmenes de datos para toma de decisiones informada</li>
                 <li><strong>Computación en la Nube:</strong> Acceso a información y control desde cualquier lugar</li>
                 <li><strong>Procesamiento de Lenguaje Natural:</strong> Interacción natural con el asistente virtual</li>
             </ul>
             
             <h3>🎯 Beneficios</h3>
-            <ul>
-                <li>Incremento en la productividad y eficiencia</li>
-                <li>Reducción de pérdidas por enfermedades</li>
-                <li>Optimización en el uso de recursos</li>
-                <li>Mejor toma de decisiones basada en datos</li>
-                <li>Agricultura más sostenible y precisa</li>
-            </ul>
+            <div class="benefits-list">
+                <p>Incremento en la productividad y eficiencia</p>
+                <p>Reducción de pérdidas por enfermedades</p>
+                <p>Optimización en el uso de recursos</p>
+                <p>Mejor toma de decisiones basada en datos</p>
+                <p>Agricultura más sostenible y precisa</p>
+                <p>Recomendaciones personalizadas basadas en experiencia experta</p>
+                <p>Acceso a conocimiento agrícola especializado</p>
+                <p>Reducción de costos operativos</p>
+            </div>
         </div>
     """, unsafe_allow_html=True)
 

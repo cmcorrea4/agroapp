@@ -14,5 +14,6 @@ keras
 numpy
 opencv-python-headless
 Pillow
+streamlit-lottie
 tensorflow==2.12
 altair==4.2.0

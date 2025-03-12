@@ -13,6 +13,8 @@ import os
 import time
 import logging
 from pathlib import Path
+from streamlit_lottie import st_lottie
+import json
 
 # Configuración de la página
 st.set_page_config(
@@ -158,8 +160,11 @@ def main():
     
     # Cargar y mostrar imagen
     try:
-        image = Image.open('assitant_farm.jpg')
-        st.image(image, width=600, caption="Asistente Agrícola Virtual")
+        #image = Image.open('assitant_farm.jpg')
+        #st.image(image, width=600, caption="Asistente Agrícola Virtual")
+        with open('farmer.json') as source:
+             animation=json.load(source)
+        st.lottie(animation,width =450)
     except Exception as e:
         logger.error(f"Error al cargar la imagen: {e}")
     

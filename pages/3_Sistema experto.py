@@ -184,7 +184,7 @@ def main():
             if knowledge_base:
                 # Área de preguntas
                 st.subheader("💭 ¿Qué deseas consultar?")
-                user_question = st.text_input("", placeholder="Escribe tu pregunta aquí...")
+                user_question = st.text_area("", placeholder="Escribe tu pregunta aquí...")
                 
                 if user_question:
                     with st.spinner('Analizando tu pregunta...'):

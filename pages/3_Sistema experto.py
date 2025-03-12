@@ -170,7 +170,7 @@ def main():
     
     # Input de API Key con diseño mejorado
     st.markdown("<div class='api-input'>", unsafe_allow_html=True)
-    api_key = st.text_input('🔑 Ingrese su clave API de OpenAI:', type='password')
+    api_key = st.text_input('🔑 Ingrese su clave:', type='password')
     st.markdown("</div>", unsafe_allow_html=True)
     
     if api_key:

@@ -94,7 +94,7 @@ def main():
             #st.image(new_image, caption="Sistema IoT de Monitoreo")
             with open('graficos.json') as source:
                  animation=json.load(source)
-            st.lottie(animation,width =450)
+            st.lottie(animation,width =350)
 
         except Exception as e:
             st.error("Error al cargar la imagen del sistema")
@@ -121,11 +121,12 @@ def main():
     # Sección de carga de archivos
     with st.container():
         st.markdown('<div class="upload-section">', unsafe_allow_html=True)
-        uploaded_file = st.file_uploader("📂 Selecciona el archivo con los datos de monitoreo")
-        st.markdown('</div>', unsafe_allow_html=True)
         with open('excel.json') as source:
             animation=json.load(source)
-        st.lottie(animation,width =450)
+        st.lottie(animation,width =350)
+        uploaded_file = st.file_uploader("📂 Selecciona el archivo con los datos de monitoreo")
+        st.markdown('</div>', unsafe_allow_html=True)
+
         if uploaded_file is not None:
             try:
                 # Procesamiento de datos

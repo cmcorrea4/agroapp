@@ -123,7 +123,7 @@ def main():
         st.markdown('<div class="upload-section">', unsafe_allow_html=True)
         with open('excel.json') as source:
             animation=json.load(source)
-        st.lottie(animation,width =350)
+        st.lottie(animation,width =250)
         uploaded_file = st.file_uploader("📂 Selecciona el archivo con los datos de monitoreo")
         st.markdown('</div>', unsafe_allow_html=True)
 

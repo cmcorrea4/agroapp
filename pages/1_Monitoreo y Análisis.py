@@ -92,7 +92,7 @@ def main():
             image = Image.open("IoT.jpg")
             new_image = image.resize((600, 400))
             st.image(new_image, caption="Sistema IoT de Monitoreo")
-            with open('Experts.json') as source:
+            with open('graficos.json') as source:
                  animation=json.load(source)
             st.lottie(animation,width =350)
 

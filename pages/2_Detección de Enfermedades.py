@@ -3,6 +3,8 @@ import numpy as np
 from PIL import Image
 from keras.models import load_model
 import logging
+from streamlit_lottie import st_lottie
+import json
 
 # Configuración de la página
 st.set_page_config(
@@ -108,6 +110,9 @@ def main():
         Este sistema utiliza inteligencia artificial para detectar enfermedades en plantas 
         a través del análisis de imágenes. Puede cargar una imagen o tomar una foto con su cámara.
     """)
+    with open('scan.json') as source:
+         animation=json.load(source)
+    st.lottie(animation,width =350)
     
     # Inicializar el detector
     detector = DiseaseDetector()
